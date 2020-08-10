@@ -1,0 +1,124 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 11, 2017, 12:48:17 PM
+    Author     : Dell
+*/
+
+
+#AnchorPane{
+    -fx-background-color: #b9baa3;
+    
+}
+
+.combobox{
+    
+    -fx-border-radius:  0px 0px 0px 0px;
+    -fx-background-color: #4b4237;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+.combo-box .cell {
+    -fx-text-fill: black;
+}
+
+.combo-box .cell:selected {
+    -fx-text-fill: white;
+}
+
+.combo-box .cell:hover{
+    -fx-background-color: #d5a021;
+}
+
+.labelError{
+    -fx-text-fill: #a22c29;
+}
+
+
+.buttonDelete{
+    -fx-background-color:  #a22c29;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+.buttonStart{
+    -fx-background-color:  #2E8B57;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+}
+
+
+
+
+.Button{
+    -fx-background-color:  #4b4237;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    /*-fx-border-radius:  0px 0px 0px 0px;*/
+}
+
+.root{
+    -fx-background-color: #262626;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view .filler{
+    -fx-background-color: transparent;
+    
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+
+.table-view .column-header-background{
+    -fx-background-color: #4b4237;
+    
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-padding: 8px;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    
+} 
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+}
+
+
+.table-row-cell{
+   
+    -fx-background-insets: 0, 0 0 1 0;
+   
+}
+
+.table-row-cell:odd{
+    
+    -fx-background-insets: 0, 0 0 1 0;
+      
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d5a021;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+
+
+

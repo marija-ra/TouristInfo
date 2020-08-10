@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="374.0" prefWidth="327.0" styleClass="window" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLKorisnikController">
+    <children>
+        <VBox layoutX="56.0" layoutY="45.0" prefHeight="199.0" prefWidth="149.0" spacing="10.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="45.0">
+            <children>
+            <Label text="Broj turista" />
+                <TextField fx:id="brojTuristaTextField" prefHeight="30.0">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextField>
+            <Label text="Dimenzije matrice" />
+                <TextField fx:id="dimenzijeMatriceTextField" prefHeight="30.0">               
+                </TextField>
+            <Label text="broj turističkih objekata" />
+                <TextField fx:id="brojTuristickihObjekataTextField" prefHeight="30.0">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+          <Button fx:id="confirmButton" layoutX="220.0" layoutY="308.0" mnemonicParsing="false" onAction="#confirmButtonAction" prefHeight="30.0" prefWidth="77.0" styleClass="Button" stylesheets="@../css/main.css" text="Potvrdi" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="30.0" />
+          <Label fx:id="errorLabel" layoutX="23.0" layoutY="251.0" prefHeight="47.0" prefWidth="208.0" styleClass="labelError" stylesheets="@../css/main.css" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" />
+      <Button fx:id="backButton" layoutX="30.0" layoutY="308.0" mnemonicParsing="false" onAction="#backButton" prefHeight="30.0" prefWidth="77.0" styleClass="Button" stylesheets="@../css/main.css" text="&lt; Nazad" />
+    </children>
+</AnchorPane>

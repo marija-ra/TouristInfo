@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="628.0" prefWidth="734.0" styleClass="window" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLTakmicenjeController">
+    <children>
+      <TextArea fx:id="gameTextArea" layoutX="218.0" layoutY="27.0" prefHeight="223.0" prefWidth="462.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextArea>
+      <TextArea fx:id="logTextArea" layoutX="23.0" layoutY="275.0" prefHeight="324.0" prefWidth="656.0" />
+      <Separator layoutX="16.0" layoutY="250.0" prefHeight="25.0" prefWidth="702.0" />
+      <VBox fx:id="vboxTakmicenje" layoutX="23.0" layoutY="26.0" prefHeight="141.0" prefWidth="159.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="605.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <Button fx:id="runButton" minHeight="49.0" mnemonicParsing="false" onAction="#runButtonAction" prefHeight="49.0" prefWidth="143.0" style="-fx-min-height: 50;" styleClass="Button" stylesheets="@../css/main.css" text="pokreni">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="resultsButton" mnemonicParsing="false" onAction="#resultsButtonAction" prefHeight="54.0" prefWidth="105.0" style="-fx-min-height: 50;" styleClass="Button" stylesheets="@../css/main.css" text="rezultati">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label fx:id="gameStatus" layoutX="23.0" layoutY="181.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

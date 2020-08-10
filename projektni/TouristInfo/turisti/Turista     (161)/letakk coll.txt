@@ -1,0 +1,16 @@
+@Override
+  public int compareTo(Object o){
+    if ( bodovi - ((Takmicar)o).bodovi != 0 )
+      return bodovi - ((Takmicar)o).bodovi;
+    return (int)(vrijeme - ((Takmicar)o).vrijeme);
+  }
+  
+  
+  ArrayList<Takmicar> lista = new ArrayList<>();
+    lista.add(pjesak);
+    lista.add(pilot);
+    lista.add(vozac);
+    
+    Collections.sort(lista);
+    Collections.reverse(lista);
+    System.out.println("Takmicari sortirani po plasmanu: ");

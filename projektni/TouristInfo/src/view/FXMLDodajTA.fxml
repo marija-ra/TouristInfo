@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="732.0" prefWidth="396.0" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXMLDodajTAController">
+     <children>
+      <VBox fx:id="vbox" alignment="TOP_CENTER" layoutX="17.0" layoutY="10.0" spacing="10.0" styleClass="window" stylesheets="@../css/main.css" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <TextField fx:id="nameTextField" promptText="Ime..">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="locationTextField" promptText="Lokacija...">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="costTextField" promptText="Cijena..">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </TextField>
+            <TextArea fx:id="descriptionTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Opis" />
+            <Button fx:id="choosePhotoButton" mnemonicParsing="false" onAction="#choosePhotoButtonAction" prefHeight="25.0" prefWidth="270.0" styleClass="Button" stylesheets="@../css/main.css" text="Odaberi Slku">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="chooseFlyerButton" mnemonicParsing="false" onAction="#chooseFlyerButtonAction" prefHeight="25.0" prefWidth="272.0" styleClass="Button" stylesheets="@../css/main.css" text="Odaberi Letak">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Label fx:id="fileNameLabel" />
+            <ImageView fx:id="ImageView" fitHeight="145.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+            <Label fx:id="errorLabel" prefHeight="68.0" prefWidth="356.0" style="-fx-wrap-text: true;" styleClass="labelError" stylesheets="@../css/main.css" />
+            <Button fx:id="ConfirmButton" alignment="TOP_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#ConfirmButtonAction" styleClass="Button" stylesheets="@../css/main.css" text="Potvrdi" textAlignment="RIGHT" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
